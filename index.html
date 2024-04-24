@@ -1,0 +1,552 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Won Kyung Do</title>
+
+    <meta name="author" content="Won Kyung Do">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icon/SU_Seal_Red.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Won Kyung Do (도원경, 都源京)
+                </p>
+                <p>I'm a fifth-year Ph.D. Candidate in Mechanical Engineering at <a href="https://me.stanford.edu/">Stanford University</a>. I am advised by Prof. <a href="https://me.stanford.edu/">Monroe Kennedy III</a> in <a href="https://arm.stanford.edu/">ARM Lab</a>. 
+                </p>
+                <!-- <p>
+                  My research goal is to give a robot a dexterity that can manipulate small objects in the real world. 
+                </p> -->
+                <p>
+                  Before coming to Stanford, I received B.S. in Mechanical Engineering from Seoul National University, advised by Prof. <a href="https://www.inrol.snu.ac.kr/dongjun-lee" >Dongjun Lee</a>. I was fortunate to work as a research intern at <a href="https://research.google/">Naver Labs</a> in 2018.
+                  <!-- At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. -->
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:wkdo@stanford.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="data/wonkyungdo_cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/wkdo_bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                  <a href="https://scholar.google.com/citations?user=9ltuHxAAAAAJ&hl=en&oi=ao">Scholar</a> &nbsp;/&nbsp;
+                  <!-- <a href="https://twitter.com/wkdo74374">Twitter</a> &nbsp;/&nbsp; -->
+                  <a href="https://www.linkedin.com/in/wonkyung-do/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/WonkyungDo">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/profile3.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile3.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:25px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in tactile sensing, desterous manipulation, small object handling, control theory, optimization, and human-robot interaction. I believe improving dexterity of the robots is essential for enabling them to perform precise tasks such as manipulating small objects autonomously. Representative papers are <span class="highlight">highlighted</span>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+            <tr onmouseout="dtmini_stop()" onmouseover="dtmini_start()" bgcolor="#ffffd0">
+              <td style="padding:5px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='dtmini_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
+                  <source src="images/video/dtmini2.mp4" type="video/mp4" style="border-radius:15px">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <video  width=100% height=100% muted autoplay loop style="border-radius:15px">
+                    <source src="images/video/dtmini1.mp4" type="video/mp4" style="border-radius:15px">
+                    Your browser does not support the video tag.
+                    </video></div>
+                <script type="text/javascript">
+                  function dtmini_start() {
+                    document.getElementById('dtmini_image').style.opacity = "1";
+                  }
+        
+                  function dtmini_stop() {
+                    document.getElementById('dtmini_image').style.opacity = "0";
+                  }
+                  dtmini_stop()
+                </script>
+              </td>
+              <td style="padding:5px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/densetact-mini/">
+              <span class="papertitle">DenseTact-Mini: An Optical Tactile Sensor for Grasping Multi-Scale Objects From Flat Surfaces</span>
+                </a>
+                <br>
+                <strong>Won Kyung Do</strong>,
+                <a href="https://arm.stanford.edu/people/ankush-dhawan">Ankush Dhawan</a>,
+                <a href="https://arm.stanford.edu/people/mathilda-kitzmann">Mathilda Kitzmann</a>,
+                <a href="https://arm.stanford.edu/people/monroe-kennedy">Monroe Kennedy III</a>
+                <br>
+                <em>ICRA (accepted)</em>, 2024  <font color="red"><strong>(Best Paper Award Finalist in Robot Manipulation)</strong></font>
+                <br>
+                <a href="https://sites.google.com/view/densetact-mini/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2309.08860">arXiv</a>
+                /
+                <a href="https://youtu.be/Z4OtpI915GM">video</a>
+                /
+                <a href="https://github.com/WonkyungDo/DTmini_grasp">github</a>
+                <p></p>
+                <p>
+                Developed a novel optical tactile sensor that can grasp multi-scale objects from flat surfaces (from 1mm basil seeds and small paperclips to items nearly 15mm).
+                </p>
+              </td>
+            </tr>
+        
+
+    <tr onmouseout="embed_stop()" onmouseover="embed_start()">
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='embed_image'><video  width=100% muted autoplay loop>
+          <source src="images/video/embed.mp4" type="video/mp4" style="border-radius:15px">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/embed.png' width=100% style="border-radius:15px">
+        </div>
+        <script type="text/javascript">
+          function embed_start() {
+            document.getElementById('embed_image').style.opacity = "1";
+          }
+
+          function embed_stop() {
+            document.getElementById('embed_image').style.opacity = "0";
+          }
+          embed_stop()
+        </script>
+      </td>
+      <td style="padding:5px;width:75%;vertical-align:middle">
+        <a href="https://sites.google.com/stanford.edu/embeddedobjectdetection/">
+          <span class="papertitle">Embedded object detection and mapping in soft materials using optical tactile sensing</span>
+        </a>
+        <br>
+		    <a href="https://www.linkedin.com/in/jose-alejandro-solano-castellanos">Jose A. Solano-Castellanos</a>
+        <strong>Won Kyung Do</strong>,
+		    <a href="https://arm.stanford.edu/people/monroe-kennedy">Monroe Kennedy III</a>
+        <br>
+        <em>SN Computer Science 5 (4), 1-11</em>, 2024
+        <br>
+        <a href="https://sites.google.com/stanford.edu/embeddedobjectdetection/">project page</a>
+        /
+        <a href="https://youtu.be/9hfDPeI5tr0?si=82vuZYbnUadodxrA">video</a>
+        /
+        <a href="https://link.springer.com/article/10.1007/s42979-024-02731-6">DOI</a>
+        <p></p>
+        <p>
+          Describes a method that uses optical tactile sensing for efficient detection and mapping of objects embedded in soft materials, demonstrated with quartz beads beneath polyethylene foam.
+        </p>
+      </td>
+    </tr>
+	
+
+
+    <tr onmouseout="tgs_stop()" onmouseover="tgs_start()">
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='tgs_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
+            <source src="images/video/tgs.mp4" type="video/mp4" style="border-radius:15px"></a>
+            Your browser does not support the video tag.
+            </video></div>
+          <img src='images/video/tgs.jpg' width="160" style="border-radius:15px">
+        </div>
+        <script type="text/javascript">
+          function tgs_start() {
+            document.getElementById('tgs_image').style.opacity = "1";
+          }
+
+          function tgs_stop() {
+            document.getElementById('tgs_image').style.opacity = "0";
+          }
+          tgs_stop()
+        </script>
+      </td>
+      <td style="padding:5px;width:75%;vertical-align:middle">
+        <a href="https://armlabstanford.github.io/touch-gs">
+			<span class="papertitle">Touch-GS: Visual-Tactile Supervised 3D Gaussian Splatting</span>
+        </a>
+        <br>
+        <a href="http://aidenswann.com/">Aiden Swann*</a>,
+        <a href="https://peasant98.github.io/">Matthew Strong*</a>,
+        <strong>Won Kyung Do</strong>,
+        <a href="https://www.linkedin.com/in/gadiel-sznaier-camps-36aaa2a8">Gadiel Sznaier Camps</a>,
+        <a href="https://web.stanford.edu/~schwager/">Mac Schwager</a>,
+		    <a href="https://arm.stanford.edu/people/monroe-kennedy">Monroe Kennedy III</a>
+        <br>
+        <em>IROS (submitted)</em>, 2024
+        <br>
+        <a href="https://armlabstanford.github.io/touch-gs">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2403.09875">arXiv</a>
+        /
+        <a href="https://www.youtube.com/watch?v=FqejaTEt7aU">Video</a>
+        /
+        <a href="https://github.com/armlabstanford/Touch-GS">Github</a>
+        <p></p>
+        <p>
+          Presents a novel method that enhances 3D Gaussian Splatting with optical tactile sensors for more accurate object representation in robotics, integrating tactile data with monocular depth images and a new variance-weighted loss function for improved scene synthesis across various materials.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="inter_stop()" onmouseover="inter_start()" bgcolor="#ffffd0">
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='inter_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
+          <source src="images/video/inter.mp4" type="video/mp4" style="border-radius:15px"></a>
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/video/inter.png' width="160" style="border-radius:15px"></a>
+        </div>
+        <script type="text/javascript">
+          function inter_start() {
+            document.getElementById('inter_image').style.opacity = "1";
+          }
+
+          function inter_stop() {
+            document.getElementById('inter_image').style.opacity = "0";
+          }
+          inter_stop()
+        </script>
+      </td>
+      <td style="padding:5px;width:75%;vertical-align:middle">
+        <a href="https://sites.google.com/view/inter-finger-manipulation">
+			<span class="papertitle">Inter-finger Small Object Manipulation with DenseTact Optical Tactile Sensor</span>
+        </a>
+        <br>
+        <strong>Won Kyung Do</strong>,
+        <a href="https://www.linkedin.com/in/bianca-jurewicz-aumann">Bianca Aumann</a>,
+        <a href="https://cac646.wixsite.com/camillec">Camille Chungyoun</a>,   
+		    <a href="https://arm.stanford.edu/people/monroe-kennedy">Monroe Kennedy III</a>
+        <br>
+        <em>R-AL</em>, 2023
+        <br>
+        <a href="https://sites.google.com/view/inter-finger-manipulation">project page</a>
+        /
+        <a href="https://ieeexplore.ieee.org/document/10321631">DOI</a>
+        /
+        <a href="https://youtu.be/l-pjQV-se-o?si=brE_rpS84PFLJ1T3">Video</a>
+        /
+        <a href="https://github.com/WonkyungDo/Small_Object_Manipulation_DenseTact">Github</a>
+        <p></p>
+        <p>
+          Introduces a tactile sensor-equipped gripper with DenseTact 2.0, enhancing precision and success in grasping small objects in cluttered environments, integrated with a specialized control algorithm and dataset for effective object classification and manipulation.
+        </p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="dtv2_stop()" onmouseover="dtv2_start()" >
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='dtv2_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
+          <source src="images/video/dtv2.mp4" type="video/mp4" style="border-radius:15px"></a>
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/video/dtv2.png' width="160" style="border-radius:15px"></a>
+        </div>
+        <script type="text/javascript">
+          function dtv2_start() {
+            document.getElementById('dtv2_image').style.opacity = "1";
+          }
+
+          function dtv2_stop() {
+            document.getElementById('dtv2_image').style.opacity = "0";
+          }
+          dtv2_stop()
+        </script>
+      </td>
+      <td style="padding:5px;width:75%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/document/10161150">
+			<span class="papertitle">DenseTact 2.0: Optical tactile sensor for shape and force reconstruction</span>
+        </a>
+        <br>
+        <strong>Won Kyung Do</strong>,
+        <a href="https://www.linkedin.com/in/bianca-jurewicz-aumann">Bianca Aumann</a>,
+		    <a href="https://arm.stanford.edu/people/monroe-kennedy">Monroe Kennedy III</a>
+        <br>
+        <em>ICRA</em>, 2023
+        <br>
+        <a href="https://ieeexplore.ieee.org/document/10161150">DOI</a>
+        /
+        <a href="https://youtu.be/8kDZjkrEZkQ?si=qOBK41joWaPXODD7">Video</a>
+        <p></p>
+        <p>
+        Designed DenseTact 2.0, an advanced optical-tactile sensor that accurately reconstructs shapes and measures forces in robotic fingertips with smaller form factors and higher resolution than previous models.
+        </p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="dtv1_stop()" onmouseover="dtv1_start()" bgcolor="#ffffd0">
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='dtv1_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
+          <source src="images/video/dtv1.mp4" type="video/mp4" style="border-radius:15px"></a>
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/video/dtv1.png' width="160" style="border-radius:15px"></a>
+        </div>
+        <script type="text/javascript">
+          function dtv1_start() {
+            document.getElementById('dtv1_image').style.opacity = "1";
+          }
+
+          function dtv1_stop() {
+            document.getElementById('dtv1_image').style.opacity = "0";
+          }
+          dtv1_stop()
+        </script>
+      </td>
+      <td style="padding:5px;width:75%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/document/9811966">
+			<span class="papertitle">Densetact: Optical tactile sensor for dense shape reconstruction</span>
+        </a>
+        <br>
+        <strong>Won Kyung Do</strong>,
+		    <a href="https://arm.stanford.edu/people/monroe-kennedy">Monroe Kennedy III</a>
+        <br>
+        <em>ICRA</em>, 2022
+        <br>
+        <a href="https://ieeexplore.ieee.org/document/9811966">DOI</a>
+        /
+        <a href="https://youtu.be/nhQzhsjbcQA?si=zzD-PCFc38ns1I6D">Video</a>
+        / Featured in : <a href="https://cheme.stanford.edu/optical-tactile-sensor-improve-robotic-performance">Stanford Engineering</a>
+        <p></p>
+        <p>
+        Introduces Densetact, a cost-effective, high-resolution tactile sensor that uses a fisheye camera and deep neural networks for precise 3D surface modeling in real-time.
+        </p>
+      </td>
+    </tr>
+
+
+
+     <tr onmouseout="vist_stop()" onmouseover="vist_start()" bgcolor="#ffffd0">
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='vist_image'><video  width="160" height="160" muted autoplay loop style="border-radius:15px">
+          <source src="images/video/vist.mp4" type="video/mp4" >
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/vistt.png' width="160" style="border-radius:15px">
+        </div>
+        <script type="text/javascript">
+          function vist_start() {
+            document.getElementById('vist_image').style.opacity = "1";
+          }
+
+          function vist_stop() {
+            document.getElementById('vist_image').style.opacity = "0";
+          }
+          vist_stop()
+        </script>
+      </td> 
+      <td style="padding:5px;width:75%;vertical-align:middle">
+        <a href="https://www.science.org/doi/10.1126/scirobotics.abe1315">
+			<span class="papertitle">Visual-inertial hand motion tracking with robustness against occlusion, interference, and contact</span>
+        </a>
+        <br>
+        <a href="https://www.inrol.snu.ac.kr/alumni">Yongseok Lee</a>,
+        <strong>Won Kyung Do</strong>,
+        <a href="https://www.linkedin.com/in/hanbyeol-yoon-ab360a229">Hanbyeol Yoon</a>,
+        <a href="https://www.inrol.snu.ac.kr/people">Jinuk Heo</a>,
+        <a href="https://www.inrol.snu.ac.kr/people">WonHa Lee</a>,
+        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
+        <br>
+        <font color="red"><strong><em>Science Robotics</em>, 2020</strong></font> 
+        <br>        
+        <a href="https://doi.org/10.1126/scirobotics.abe1315">DOI</a>
+        / Featured in : <a href="https://www.snu.ac.kr/research/highlights?md=v&bbsidx=133489">Seoul National University Press</a> and
+        <a href="https://www.etnews.com/20210930000170">ETNews</a>
+        <p></p>
+        <p>
+          Integrates sensor gloves and stereo cameras with a fusion algorithm for precise and reliable hand tracking, improving performance in real-world applications despite challenges like occlusions and electromagnetic interference.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="social_stop()" onmouseover="social_start()" >
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='social_image'>
+            <img src='images/social22.png' width="160" style="border-radius:15px">
+          </div>
+          <img src='images/social.jpg' width="160" style="border-radius:15px">
+        </div>
+        <script type="text/javascript">
+          function social_start() {
+            document.getElementById('social_image').style.opacity = "1";
+          }
+
+          function social_stop() {
+            document.getElementById('social_image').style.opacity = "0";
+          }
+          social_stop()
+        </script>
+      </td> 
+      <td style="padding:5px;width:75%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/8768706">
+          <span class="papertitle">Online social touch pattern recognition with multi-modal-sensing modular tactile interface</span>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/hyunjin-ku-b4b917b5?original_referer=https%3A%2F%2Fwww.google.com%2F">HyunJin Ku*</a>,
+        <a href="https://jay-choi.me/">Jason J. Choi*</a>,
+        <a href="https://www.linkedin.com/in/sunho-jang-73a2b71b5">Sunho Jang*</a>,
+        <strong>Won Kyung Do*</strong>, <br>
+        <a href="https://ch.linkedin.com/in/sumin0">Soomin Lee</a>, 
+        <a href="https://www.crunchbase.com/person/seok-sang-ok">Sangok Seok</a> 
+        <br>
+        <em>UR (International Conference on Ubiquitous Robots)</em>, 2019
+        <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/8768706">DOI</a>
+        <p></p>
+        <p>
+          Introduces a framework combining multi-modal tactile sensing and modular design with a classifier for recognizing social touch patterns, achieving up to 88.86% accuracy using methods like HMM, LSTM, and 3D-CNN.        </p>
+      </td>
+    </tr>
+
+
+    <td style="padding:5px;width:25%;vertical-align:middle"><img src="images/shelly.png" alt="sym" width="160" style="border-radius:15px"></a></td>
+
+    <!-- <tr onmouseout="shelly2_stop()" onmouseover="shelly2_start()" bgcolor="#ffffd0">
+      <td style="padding:5px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='shelly2_image'>
+            <img src='images/shelly22.jpg' width="160" style="border-radius:15px">
+          </div>
+          <img src='images/shelly.png' width="160" style="border-radius:15px">
+        </div>
+        <script type="text/javascript">
+          function shelly2_start() {
+            document.getElementById('shelly2_image').style.opacity = "1";
+          }
+
+          function shelly2_stop() {
+            document.getElementById('shelly2_image').style.opacity = "0";
+          }
+          shelly2_stop()
+        </script>
+      </td>  -->
+        <td style="padding:5px;width:75%;vertical-align:middle">
+          <a href="https://dl.acm.org/doi/10.1145/3173386.3176973">
+            <span class="papertitle">Designing shelly, a robot capable of assessing and restraining children's robot abusing behaviors</span>
+          </a>
+          <br>
+          <a href="https://www.linkedin.com/in/hyunjin-ku-b4b917b5?original_referer=https%3A%2F%2Fwww.google.com%2F">HyunJin Ku*</a>,
+          <a href="https://jay-choi.me/">Jason J. Choi*</a>,
+          <a href="https://ch.linkedin.com/in/sumin0">Soomin Lee*</a>, <br>
+          <a href="https://www.linkedin.com/in/sunho-jang-73a2b71b5">Sunho Jang*</a>,
+          <strong>Won Kyung Do*</strong>
+          <br>
+          <em>HRI (Late Breaking Report)</em>, 2018 
+          <br>
+          <a href="https://dl.acm.org/doi/10.1145/3173386.3176973">DOI</a>
+          <p></p>
+          <p>
+            Showed that the robot Shelly effectively reduces children's robot abusing while maintaining their engagement with the robot.</p>
+        </td>
+      </tr> 
+
+
+      <tr onmouseout="shelly_stop()" onmouseover="shelly_start()" bgcolor="#ffffd0">
+        <td style="padding:5px;width:25%;vertical-align:middle"><img src="images/shelly1.png" alt="sym" width="160" style="border-radius:15px"></a></td>
+
+        <td style="padding:5px;width:75%;vertical-align:middle">
+          <a href="https://dl.acm.org/doi/10.1145/3173386.3177824">
+            <span class="papertitle">Shelly, a tortoise-like robot for one-to-many interaction with children</span>
+          </a>
+          <br>
+          <a href="https://www.linkedin.com/in/hyunjin-ku-b4b917b5?original_referer=https%3A%2F%2Fwww.google.com%2F">HyunJin Ku*</a>,
+          <a href="https://jay-choi.me/">Jason J. Choi*</a>,
+          <a href="https://ch.linkedin.com/in/sumin0">Soomin Lee*</a>, <br>
+          <a href="https://www.linkedin.com/in/sunho-jang-73a2b71b5">Sunho Jang*</a>,
+          <strong>Won Kyung Do*</strong>
+          <br>
+          <em>HRI</em>, 2018 &nbsp <font color="red"><strong>(1st Prize on Student Design Competition)</strong></font>
+          <br>
+          <a href="https://dl.acm.org/doi/10.1145/3173386.3177824">DOI</a>
+          / <a href="https://www.youtube.com/watch?app=desktop&v=cHebXqDvgto">Video</a>
+          <br>
+          Featured in : <a href="https://spectrum.ieee.org/shelly-robotic-tortoise-helps-kids-learn-that-robot-abuse-is-a-bad-thing">IEEE Spectrum</a>, 
+          <a href="https://techcrunch.com/2018/03/20/this-tortoise-shows-kids-that-robot-abuse-is-bad/">TechCrunch</a>, 
+          <a href="https://www.nbcnews.com/mach/science/tiny-tortoise-has-big-lesson-teach-kids-about-robots-ncna859571">NBC News-Mach</a>, 
+          <a href="https://www.fastcompany.com/90165541/robot-abuse-is-real">Fast Company-Co.Design</a>,
+          <a href="https://new.snu.ac.kr/snunow/snu_story?bm=v&bbsidx=125297&page=1">Seoul National University Press</a>, and
+          <a href="https://humanrobotinteraction.org/2018/awards/index.html">HRI</a>
+          <p></p>
+          <p>
+           Designed "Shelly", a tortoise-like robot that engages with children while mitigating abusive behaviors towards robots.</p>
+        </td>
+      </tr> 
+
+
+          </tbody></table>
+
+          
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Service</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <!-- <td style="padding:5px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td> -->
+              <td width="100%" valign="center">
+                Reviewer in <a href="https://www.ieee-ras.org/publications/ra-l">R-AL</a>, 
+                <a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra/">ICRA</a>, 
+                <a href="https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros">IROS</a>, 
+                <a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/case">CASE</a>, and 
+                <a href="https://www.mdpi.com/journal/sensors">Sensors</a>
+                <br>
+              </td>
+            </tr>
+            <!-- <tr>
+              <td style="padding:5px;width:25%;vertical-align:middle">
+                <img src="images/cs188.jpg" alt="cs188">
+              </td>
+              <td width="75%" valign="center">
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+                <br>
+                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+              </td>
+            </tr> -->
+            
+
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Template taken from <a href="https://github.com/jonbarron/jonbarron_website">here</a>. 
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
