@@ -60,7 +60,7 @@
 
 
 
-            <tr onmouseout="dtmini_stop()" onmouseover="dtmini_start()" bgcolor="#ffffd0">
+            <tr ontouchstart="dtmini_stop()" ontouchend="dtmini_start()" bgcolor="#ffffd0">
               <td style="padding:5px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='dtmini_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
@@ -78,6 +78,15 @@
         
                   function dtmini_stop() {
                     document.getElementById('dtmini_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('dtmini_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('dtmini_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('dtmini_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('dtmini_image').addEventListener('mouseout', vist_stop);
+
                   }
                   dtmini_stop()
                 </script>
@@ -109,7 +118,7 @@
             </tr>
         
 
-    <tr onmouseout="embed_stop()" onmouseover="embed_start()">
+    <tr ontouchstart="embed_stop()" ontouchend="embed_start()">
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='embed_image'><video  width=100% muted autoplay loop>
@@ -125,6 +134,15 @@
 
           function embed_stop() {
             document.getElementById('embed_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('embed_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('embed_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('embed_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('embed_image').addEventListener('mouseout', vist_stop);
+
           }
           embed_stop()
         </script>
@@ -154,7 +172,7 @@
 	
 
 
-    <tr onmouseout="tgs_stop()" onmouseover="tgs_start()">
+    <tr ontouchstart="tgs_stop()" ontouchend="tgs_start()">
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='tgs_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
@@ -170,6 +188,15 @@
 
           function tgs_stop() {
             document.getElementById('tgs_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('tgs_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('tgs_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('tgs_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('tgs_image').addEventListener('mouseout', vist_stop);
+
           }
           tgs_stop()
         </script>
@@ -203,7 +230,7 @@
     </tr>
 
 
-    <tr onmouseout="inter_stop()" onmouseover="inter_start()" bgcolor="#ffffd0">
+    <tr ontouchstart="inter_stop()" ontouchend="inter_start()" bgcolor="#ffffd0">
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='inter_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
@@ -219,6 +246,15 @@
 
           function inter_stop() {
             document.getElementById('inter_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('inter_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('inter_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('inter_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('inter_image').addEventListener('mouseout', vist_stop);
+
           }
           inter_stop()
         </script>
@@ -251,7 +287,7 @@
 
 
 
-    <tr onmouseout="dtv2_stop()" onmouseover="dtv2_start()" >
+    <tr ontouchstart="dtv2_stop()" ontouchend="dtv2_start()" >
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='dtv2_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
@@ -267,6 +303,15 @@
 
           function dtv2_stop() {
             document.getElementById('dtv2_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('dtv2_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('dtv2_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('dtv2_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('dtv2_image').addEventListener('mouseout', vist_stop);
+
           }
           dtv2_stop()
         </script>
@@ -294,7 +339,7 @@
 
 
 
-    <tr onmouseout="dtv1_stop()" onmouseover="dtv1_start()" bgcolor="#ffffd0">
+    <tr ontouchstart="dtv1_stop()" ontouchend="dtv1_start()" bgcolor="#ffffd0">
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='dtv1_image'><video  width=100% height=100% muted autoplay loop style="border-radius:15px">
@@ -310,6 +355,15 @@
 
           function dtv1_stop() {
             document.getElementById('dtv1_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('dtv1_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('dtv1_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('dtv1_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('dtv1_image').addEventListener('mouseout', vist_stop);
+
           }
           dtv1_stop()
         </script>
@@ -337,7 +391,7 @@
 
 
 
-     <tr onmouseout="vist_stop()" onmouseover="vist_start()" bgcolor="#ffffd0">
+     <tr ontouchstart="vist_stop()" ontouchend="vist_start()" bgcolor="#ffffd0">
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='vist_image'><video  width="160" height="160" muted autoplay loop style="border-radius:15px">
@@ -353,6 +407,15 @@
 
           function vist_stop() {
             document.getElementById('vist_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('vist_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('vist_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('vist_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('vist_image').addEventListener('mouseout', vist_stop);
+
           }
           vist_stop()
         </script>
@@ -382,7 +445,7 @@
     </tr>
 
 
-    <tr onmouseout="social_stop()" onmouseover="social_start()" >
+    <tr ontouchstart="social_stop()" ontouchend="social_start()" >
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='social_image'>
@@ -397,6 +460,15 @@
 
           function social_stop() {
             document.getElementById('social_image').style.opacity = "0";
+                  }
+                  // Detect if the user is on a mobile device
+                  if ('ontouchstart' in window) {
+                    document.getElementById('social_image').addEventListener('touchstart', vist_start);
+                    document.getElementById('social_image').addEventListener('touchend', vist_stop);
+                  } else {
+                    document.getElementById('social_image').addEventListener('mouseover', vist_start);
+                    document.getElementById('social_image').addEventListener('mouseout', vist_stop);
+
           }
           social_stop()
         </script>
@@ -425,7 +497,7 @@
 
     <td style="padding:5px;width:25%;vertical-align:middle"><img src="images/shelly.png" alt="sym" width="160" style="border-radius:15px"></a></td>
 
-    <!-- <tr onmouseout="shelly2_stop()" onmouseover="shelly2_start()" bgcolor="#ffffd0">
+    <!-- <tr ontouchstart="shelly2_stop()" ontouchend="shelly2_start()" bgcolor="#ffffd0">
       <td style="padding:5px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='shelly2_image'>
@@ -465,7 +537,7 @@
       </tr> 
 
 
-      <tr onmouseout="shelly_stop()" onmouseover="shelly_start()" bgcolor="#ffffd0">
+      <tr ontouchstart="shelly_stop()" ontouchend="shelly_start()" bgcolor="#ffffd0">
         <td style="padding:5px;width:25%;vertical-align:middle"><img src="images/shelly1.png" alt="sym" width="160" style="border-radius:15px"></a></td>
 
         <td style="padding:5px;width:75%;vertical-align:middle">
